@@ -1,552 +1,598 @@
 @font-face {
-
- font-family: "PT Sans";
- font-style: normal;
- font-weight: 400;
- src:url("fonts/pt-sans-regular.woff2") format(woff2);
- font-display: swap;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/pt-sans-regular.woff2") format(woff2);
+  font-display: swap;
 }
 
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/pt-sans-bold.woff2")format(woff2);
+  src: url("fonts/pt-sans-bold.woff2") format(woff2);
   font-display: swap;
 }
 
-body{
+html {
+  height: 100%;
+}
 
-  font-family: "PT Sans",sans-serif;
-  font-size:16px ;
-  line-height:24px ;
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
   color: black;
-  background-color:white;
+  background-color: white;
 }
 
-.page-header{
+.main-container {
+  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.page-header {
   color: black;
-  background:#FFFFFF;
+  background: #ffffff;
   text-align: center;
-
 }
 
-.navigation-link{
-font-family: "PT Sans",sans-serif;
-color: #000000;
-background:#FFFFFF;
-text-decoration: none;
-font-size: 20px;
-line-height: 24px;
-font-weight: 700;
-text-align: center;
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
 }
 
-.description{
-font-family: "PT Sans",sans-serif;
-font-weight: 700;
-font-size: 30px;
-line-height: 36px;
-text-align: center;
+.navigation-item {
+  max-width: 340px;
+  margin: 0;
+  padding: 0;
 }
 
-.description h2{
-padding: 5px;
-
+.navigation-user {
+  width: 268px;
+  margin-left: auto;
 }
 
-.text-cause{
-font-family:"PT Sans",sans-serif;
-font-weight: 400;
-font-size:22px;
-line-height:26px;
-color: #333333;
-;
-
-}
-
-.container-real-town{
-color: #FFFFFF;
-background:#82B3D3;
-font-family: "PT Sans",sans-serif;
-font-weight: 700;
-font-size: 24px;
-line-height: 28px;
-text-align: center;
-}
-
-.text-description{
-color: #FFFFFF;
-background:#82B3D3;
-font-family: "PT Sans",sans-serif;
-font-weight: 400;
-font-size: 18px;
-line-height: 21px;
-text-align: center;
-}
-
-.container-small-area{
-  background: #83B3D31F;
-  text-align: center;
-  color:#000000;
-}
-
-.container-small-area h3{
+.navigation-link {
+  font-family: "PT Sans", sans-serif;
   color: #000000;
-  font-family:"PT Sans",sans-serif;
+  background: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.hero {
+  background-image: url("../images/fon-images.jpg");
+  background-size: cover;
+  height: 485px;
+  width: 100%;
+}
+
+.background-addition {
+  position: relative;
+  top: 450px;
+}
+
+.hero-text {
+  display: block;
+  margin: 0 auto;
+}
+
+.description {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.sedona-header {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.text-cause {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+
+.advantages {
+  display: flex;
+  flex-wrap: wrap ;
+  /* justify-content: ; */
+  margin: 0;
+  padding: 0;
+  flex-direction: row;
+  width:100%;
+  text-align: center;
+}
+
+.container-real-town {
+  color: #ffffff;
+  background: #82b3d3;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
+  width: 400px;
+  height: 385px;
 }
 
-.text-attractions{
-  color:#333333;
+.advantages-list{
+padding:0;
+text-align: center;
+}
 
-  font-family:"PT Sans",sans-serif;
+
+
+
+
+.text-description {
+  color: #ffffff;
+  background: #82b3d3;
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
 }
 
-.container-beautiful-road{
-  color:#000000;
-   background: #83B3D333;
+.container-small-area {
+  background: #83b3d31f;
   text-align: center;
+  color: #000000;
+  width: 400px;
+  height: 385px;
 }
 
-.container-beautiful-road h3{
+.container-small-area h3 {
   color: #000000;
-  font-family:"PT Sans",sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
 }
 
-.container-beautiful-road p{
-   color:#333333;
-  font-family:"PT Sans",sans-serif;
-  font-weight:400;
+.text-attractions {
+  color: #333333;
+
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
 }
 
-.container-few-tourists{
+.container-beautiful-road {
   color: #000000;
-  background: #83B3D31F;
+  background: #83b3d333;
   text-align: center;
+  width: 400px;
+  height: 385px;
 }
 
-
-.container-few-tourists h3{
+.container-beautiful-road h3 {
   color: #000000;
-  font-family:"PT Sans",sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  text-align: center;
-
-}
-
-.container-few-tourists p{
-  color:#333333;
-  font-family:"PT Sans",sans-serif;
-  font-weight:400;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-}
-
-.container-devils-bridge{
-color:#FFFFFF;
-background: #82B3D3;
-text-align: center;
-}
-
-.container-devils-bridge h3{
-  color:#FFFFFF;
-  font-family:"PT Sans",sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
 }
 
-.container-devils-bridge p{
-  color:#FFFFFF;
-  font-family:"PT Sans",sans-serif;
-  font-weight:400;
+.container-beautiful-road p {
+  color: #333333;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-
 }
 
+.container-few-tourists {
+  color: #000000;
+  background: #83b3d31f;
+  text-align: center;
+  width: 400px;
+  height: 385px;
+}
 
-.come-to-sedona h2{
-  color:#000000;
-  font-family:"PT Sans",sans-serif;
-  font-weight:700;
+.container-few-tourists h3 {
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.container-few-tourists p {
+  color: #333333;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.container-devils-bridge {
+  color: #ffffff;
+  background: #82b3d3;
+  text-align: center;
+  width: 400px;
+  height: 385px;
+}
+
+.container-devils-bridge h3 {
+  color: #ffffff;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.container-devils-bridge p {
+  color: #ffffff;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.come-to-sedona h2 {
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
 }
 
-.come-to-sedona p{
-  color:#333333;
-  font-family:"PT Sans",sans-serif;
-  font-weight:400;
+.come-to-sedona p {
+  color: #333333;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-
 }
 
-.cards-housing{
+.cards-housing {
   color: #000000;
-  background: #83B3D31F;
+  background: #83b3d31f;
   text-align: center;
-
 }
 
-.cards-housing h4{
-  color:#000000;
-  font-family:"PT Sans",sans-serif;
-  font-weight:700;
+.cards-housing h4 {
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
   font-size: 24px;
-  line-height:28px;
+  line-height: 28px;
   text-align: center;
-
 }
 
-.cards-housing p{
-  color:#333333;
-  font-family:"PT Sans",sans-serif;
-  font-weight:400;
+.cards-housing p {
+  color: #333333;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-
 }
 
-.cards-burger{
-color: #000000;
-background: #FFFFFF;
-text-align: center;
-}
-
-.cards-burger h4{
+.cards-burger {
   color: #000000;
-  font-family:"PT Sans",sans-serif;
-  font-weight:700;
-  font-size: 24px;
-  line-height:28px;
+  background: #ffffff;
   text-align: center;
-
 }
 
-.cards-burger p{
-  color:#333333;
-  font-family:"PT Sans",sans-serif;
-  font-weight:400;
+.cards-burger h4 {
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.cards-burger p {
+  color: #333333;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-
 }
 
-.cards-present{
+.cards-present {
   color: #000000;
-  background:#83B3D31F;
+  background: #83b3d31f;
   text-align: center;
 }
 
-.cards-present h4{
+.cards-present h4 {
   color: #000000;
-  font-family:"PT Sans",sans-serif;
-  font-weight:700;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
   font-size: 24px;
-  line-height:28px;
+  line-height: 28px;
   text-align: center;
 }
 
-.cards-present p{
-  color:#333333;
-  font-family:"PT Sans",sans-serif;
-  font-weight:400;
+.cards-present p {
+  color: #333333;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-
 }
 
-.expected-dates{
+.expected-dates {
   color: #000000;
-  background: #FFFFFF;
+  background: #ffffff;
   text-align: center;
 }
 
-.expected-dates h3{
+.expected-dates h3 {
   color: #000000;
-  font-family:"PT Sans",sans-serif;
-  font-weight:700;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
   font-size: 30px;
-  line-height:36px;
+  line-height: 36px;
   text-align: center;
-
 }
 
-.expected-dates{
-
-  color:#333333;
-  font-family:"PT Sans",sans-serif;
-  font-weight:400;
+.expected-dates {
+  color: #333333;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
 }
 
-.search-button{
-color: #FFFFFF;
-background: #756157;
-width: 367px;
-height: 52px;
+.search-button {
+  color: #ffffff;
+  background: #756157;
+  width: 367px;
+  height: 52px;
 }
 
-.search-button p{
-color: #FFFFFF;
-font-family:"PT Sans",sans-serif;
-font-weight:700;
-font-size: 20px;
-line-height: 36px;
-text-align: center;
-margin: 0%;
+.search-button p {
+  color: #ffffff;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  margin: 0%;
 }
 
-.subscription{
-  color: #FFFFFF;
+.subscription {
+  color: #ffffff;
   background-image: url("../images/fon-email.jpg");
   width: 100%;
   height: 415px;
   background-repeat: no-repeat;
   background-size: 100% auto;
   text-align: center;
-
 }
 
-.subscription h3{
-  color: #FFFFFF;
-  font-family:"PT Sans",sans-serif;
-  font-weight:700;
+.subscription h3 {
+  color: #ffffff;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
-
 }
 
-.subscription p{
-  color: #FFFFFF;
-  font-family:"PT Sans",sans-serif;
-  font-weight:400;
+.subscription p {
+  color: #ffffff;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-
 }
 
-
-.blue-button{
- color: #FFFFFF;
- background: #82B3D3;
-
+.blue-button {
+  color: #ffffff;
+  background: #82b3d3;
 }
 
 .page-footer {
-text-align: center;
-
+  text-align: center;
 }
-
 
 .telephone-footer a {
-
-color:#000000;
-font-family:"PT Sans",sans-serif;
-font-weight:400;
-font-size: 40px;
-line-height: 40px;
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
 }
 
-
-.main-inner{
-font-family:"PT Sans",sans-serif;
-color: #FFFFFF;
-background-image: url("../images/catalog/hotels-images.jpg");
-width:1200px;
-height: 412px;
-text-align: center;
+.main-inner {
+  font-family: "PT Sans", sans-serif;
+  color: #ffffff;
+  background-image: url("../images/catalog/hotels-images.jpg");
+  width: 1200px;
+  height: 412px;
+  text-align: center;
 }
 
-.main-inner h1{
-  color: #FFFFFF;
-  font-family:"PT Sans",sans-serif;
-  font-weight:700;
+.main-inner h1 {
+  color: #ffffff;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
   font-size: 60px;
   line-height: 78px;
   text-align: center;
 }
 
-.breadcrumbs-link{
-  color: #FFFFFF;
-  font-family:"PT Sans",sans-serif;
-  font-weight:400;
+.breadcrumbs-link {
+  color: #ffffff;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
   font-size: 16px;
-  line-height:21px;
+  line-height: 21px;
   text-align: center;
 }
 
-.infrastructure{
-  color: #FFFFFF;
-  font-family:"PT Sans",sans-serif;
-  font-weight:700;
+.infrastructure {
+  color: #ffffff;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-align: center;
-
 }
 
-.filter-button-blue{
-  color:#FFFFFF;
-  background: #82B3D3;
+.filter-button-blue {
+  color: #ffffff;
+  background: #82b3d3;
 }
 
-.main-inner input{
-  color: #FFFFFF;
-  font-family:"PT Sans",sans-serif;
-  font-weight:400;
+.main-inner input {
+  color: #ffffff;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
   font-size: 18px;
   line-height: 23px;
   text-align: center;
 }
 
-
-.spa{
+.spa {
   color: #000000;
-  font-family:"PT Sans",sans-serif;
-  font-weight:700;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
   font-size: 30px;
-  line-height:36px;
+  line-height: 36px;
   text-align: center;
-
 }
 
-.cards a{
-color: #000000;
-}
-
-.cards-amara{
+.cards a {
   color: #000000;
-  font-family:"PT Sans",sans-serif;
-  font-weight:700;
+}
+
+.cards-amara {
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
   font-size: 24px;
-  line-height:28px;
+  line-height: 28px;
   text-align: center;
-
 }
 
-.cards-amara p{
-  color:#333333;
-  font-family:"PT Sans",sans-serif;
-  font-weight:400;
+.cards-amara p {
+  color: #333333;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
   font-size: 18px;
-  line-height:21px;
+  line-height: 21px;
   text-align: center;
-
 }
 
-.amara-more-details{
-  color: #FFFFFF;
+.amara-more-details {
+  color: #ffffff;
   background: #756157;
 }
 
-.amara-to-favorites{
-color: #FFFFFF;
-background: #82B3D3;
+.amara-to-favorites {
+  color: #ffffff;
+  background: #82b3d3;
 }
 
-.cards-villas{
-color: #000000;
-font-family: "PT Sans",sans-serif;
-text-align: center;
-
-}
-
-.diablo{
+.cards-villas {
   color: #000000;
-  font-family:"PT Sans",sans-serif;
-  font-weight:700;
+  font-family: "PT Sans", sans-serif;
+  text-align: center;
+}
+
+.diablo {
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
   font-size: 24px;
-  line-height:28px;
+  line-height: 28px;
   text-align: center;
 }
 
-.cards-villas p{
-  color:#333333;
-  font-family:"PT Sans",sans-serif;
-  font-weight:400;
+.cards-villas p {
+  color: #333333;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
   font-size: 18px;
-  line-height:21px;
+  line-height: 21px;
   text-align: center;
 }
 
-
-.cards-desert{
+.cards-desert {
   color: #000000;
-  font-family: "PT Sans",sans-serif;
+  font-family: "PT Sans", sans-serif;
   text-align: center;
 }
 
-.desert{
+.desert {
   color: #000000;
-  font-family:"PT Sans",sans-serif;
-  font-weight:700;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
   font-size: 24px;
-  line-height:28px;
+  line-height: 28px;
   text-align: center;
 }
 
-.cards-desert p{
-  color:#333333;
-  font-family:"PT Sans",sans-serif;
-  font-weight:400;
+.cards-desert p {
+  color: #333333;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
   font-size: 18px;
-  line-height:21px;
+  line-height: 21px;
   text-align: center;
 }
 
-.cards-greentree{
+.cards-greentree {
   color: #000000;
-  font-family: "PT Sans",sans-serif;
+  font-family: "PT Sans", sans-serif;
   text-align: center;
-
 }
 
-.greentree{
+.greentree {
   color: #000000;
-  font-family:"PT Sans",sans-serif;
-  font-weight:700;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
   font-size: 24px;
-  line-height:28px;
+  line-height: 28px;
   text-align: center;
 }
 
-.cards-greentree p{
-  color:#333333;
-  font-family:"PT Sans",sans-serif;
-  font-weight:400;
+.cards-greentree p {
+  color: #333333;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
   font-size: 18px;
-  line-height:21px;
+  line-height: 21px;
   text-align: center;
 }
