@@ -14,26 +14,15 @@
   font-display: swap;
 }
 
-html {
-  height: 100%;
-}
-
 body {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
+  margin: 0 auto;
+  padding: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: black;
   background-color: white;
-}
-
-.main-container {
-  flex-grow: 1;
-  margin: 0;
-  padding: 0;
+  width: 1200px;
 }
 
 .page-header {
@@ -43,20 +32,26 @@ body {
 }
 
 .navigation {
-  display: flex;
   width: 1200px;
+  display: flex;
   margin: 0 auto;
 }
 
-.navigation-item {
-  max-width: 340px;
+.navigation-list {
   margin: 0;
   padding: 0;
+  list-style: none;
+  width: 600px;
+  height: 64px;
 }
 
 .navigation-user {
-  width: 268px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   margin-left: auto;
+  width: 300px;
+  height: 64px;
 }
 
 .navigation-link {
@@ -70,37 +65,15 @@ body {
   text-align: center;
 }
 
-.hero {
-  background-image: url("../images/fon-images.jpg");
-  background-size: cover;
-  height: 485px;
-  width: 100%;
-}
-
-.background-addition {
-  position: relative;
-  top: 450px;
-}
-
-.hero-text {
-  display: block;
-  margin: 0 auto;
-}
-
 .description {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
-}
-
-.sedona-header {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-align: center;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
 }
 
 .text-cause {
@@ -113,13 +86,14 @@ body {
 
 .advantages {
   display: flex;
-  flex-wrap: wrap ;
-  /* justify-content: ; */
-  margin: 0;
+  flex-wrap: wrap;
+  width: 1200px;
+  list-style-type: none;
   padding: 0;
-  flex-direction: row;
-  width:100%;
-  text-align: center;
+}
+
+.images-city {
+  display: block;
 }
 
 .container-real-town {
@@ -133,15 +107,6 @@ body {
   width: 400px;
   height: 385px;
 }
-
-.advantages-list{
-padding:0;
-text-align: center;
-}
-
-
-
-
 
 .text-description {
   color: #ffffff;
@@ -276,10 +241,18 @@ text-align: center;
   text-align: center;
 }
 
+.cards-list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
 .cards-housing {
   color: #000000;
   background: #83b3d31f;
   text-align: center;
+  width: 400px;
+  height: 385px;
 }
 
 .cards-housing h4 {
@@ -304,6 +277,8 @@ text-align: center;
   color: #000000;
   background: #ffffff;
   text-align: center;
+  width: 400px;
+  height: 385px;
 }
 
 .cards-burger h4 {
@@ -328,6 +303,8 @@ text-align: center;
   color: #000000;
   background: #83b3d31f;
   text-align: center;
+  width: 400px;
+  height: 385px;
 }
 
 .cards-present h4 {
@@ -426,6 +403,27 @@ text-align: center;
   text-align: center;
 }
 
+.description-text {
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.hero {
+  background-image: url("../images/Fon-images.jpg");
+  width: 1200px;
+  height: 385px;
+  margin-top: 10px;
+  background-size: cover;
+}
+
+.hero-text {
+  display: block;
+  margin: 0 auto;
+}
+
 .telephone-footer a {
   color: #000000;
   font-family: "PT Sans", sans-serif;
@@ -434,22 +432,29 @@ text-align: center;
   line-height: 40px;
 }
 
+.main-index {
+  width: 1200px;
+}
+
 .main-inner {
   font-family: "PT Sans", sans-serif;
-  color: #ffffff;
-  background-image: url("../images/catalog/hotels-images.jpg");
+  color: #000000;
+  /* background-image: url("../images/catalog/hotels-images.jpg"); */
   width: 1200px;
   height: 412px;
-  text-align: center;
 }
 
 .main-inner h1 {
-  color: #ffffff;
+  color: #000000;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
-  text-align: center;
+}
+
+.page-container {
+  width: 1200px;
+  margin: auto;
 }
 
 .breadcrumbs-link {
@@ -462,7 +467,7 @@ text-align: center;
 }
 
 .infrastructure {
-  color: #ffffff;
+  color: #000000;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -595,4 +600,29 @@ text-align: center;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+}
+
+.page-footer-container {
+  display: flex;
+
+  width: 1200px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+.social-media {
+  display: flex;
+  list-style-type: none;
+  width: 200px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.telephone-footer {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 1000px;
 }
